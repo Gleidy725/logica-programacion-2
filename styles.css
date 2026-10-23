@@ -1,0 +1,78 @@
+body {
+    background-color: #F5F1FA;
+}
+
+/* Tarjeta principal */
+.conversor-card {
+    width: 100%;
+    max-width: 30rem;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+}
+
+/* Icono superior */
+.icono-temperatura {
+    font-size: 2.5rem;
+    color: #8064B1;
+}
+
+/* Campo de entrada */
+.campo-temperatura {
+    border-radius: 12px;
+    padding: 12px;
+    border-color: #DCD2ED;
+}
+
+.campo-temperatura:focus {
+    border-color: #9B83C8;
+    box-shadow: 0 0 0 0.2rem rgba(128, 100, 177, 0.15);
+}
+
+/* Tarjetas de resultados */
+.resultado {
+    padding: 18px 8px;
+    border-radius: 16px;
+    min-height: 135px;
+}
+
+.resultado i {
+    font-size: 1.5rem;
+}
+
+.resultado h6 {
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.resultado-kelvin {
+    background-color: #EEE8FA;
+    color: #644A91;
+}
+
+.resultado-fahrenheit {
+    background-color: #FCEDE3;
+    color: #A65D37;
+}
+
+/* Valores de las conversiones */
+.valor-resultado {
+    margin: 12px 0 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+/* Botón principal */
+.btn-convertir {
+    background-color: #8064B1;
+    color: #FFFFFF;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-convertir:hover {
+    background-color: #684C98;
+    color: #FFFFFF;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperatura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <section id="Formulario" class="d-flex justify-content-center align-items-center min-vh-100 px-3">
+
+        <div class="card text-center shadow-lg border-0 p-3 conversor-card">
+
+            <div class="card-body">
+
+                <i class="bi bi-thermometer-half icono-temperatura"></i>
+
+                <h5 class="card-title mt-3">Conversor de temperaturas</h5>
+
+                <p class="card-text text-secondary">
+                    Convertimos de Celsius a otras unidades
+                </p>
+
+                <div class="text-start mb-4">
+                    <label for="input" class="form-label">
+                        Temperatura en Celsius (°C)
+                    </label>
+
+                    <input type="number" class="form-control campo-temperatura" id="input" placeholder="Ej: 25">
+                </div>
+
+                <div class="container px-0 mb-4">
+                    <div class="row g-3">
+
+                        <div class="col-6">
+                            <div class="resultado resultado-kelvin">
+                                <i class="bi bi-thermometer-sun"></i>
+                                <h6>Kelvin</h6>
+                                <p id="kelvin" class="valor-resultado">-- K</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="resultado resultado-fahrenheit">
+                                <i class="bi bi-thermometer-half"></i>
+                                <h6>Fahrenheit</h6>
+                                <p id="fahrenheit" class="valor-resultado">-- °F</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button id="boton" class="btn btn-convertir w-100" type="button">
+                    <i class="bi bi-arrow-left-right me-2"></i>
+                    Hacer conversión
+                </button>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="app.js"></script>
+</body>
